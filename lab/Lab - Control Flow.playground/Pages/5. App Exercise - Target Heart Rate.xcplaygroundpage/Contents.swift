@@ -7,16 +7,43 @@
  
  > Test your code with all 3 of the currentAverage values below. Make sure only 1 is uncommented at a time!
  */
+
+
 let targetLowerBound = 70
 let targetUpperBound = 90
-
-let currentAverage = 67
+//let currentAverage = 67
 //let currentAverage = 85
-//let currentAverage = 95
+let currentAverage = 95
+
 
 //insert your code here
 
+let isAverage = 80
+let isAboveAverage = 90
+let isBelowAverage = 70
+
+let inBound: Bool = currentAverage >= targetLowerBound && currentAverage <= targetUpperBound
+
+
+if currentAverage > isAboveAverage{
+    print("You're on the right track!")
+}
+else if currentAverage > isBelowAverage && currentAverage < isAboveAverage{
+    print("You're doing great, but try to push it a bit!")
+}
+else {
+    print("You need to study more")
+}
+
+
+
 //print the results from each current average here.
+
+//print("Case 1: You need to study more often")
+
+//print("Case 2: You're doing great, but try to push it a bit!")
+
+print("Case: You're right on track!")
 
 
 //: [Previous](@previous)  |  page 5 of 9  |  [Next](@next)
